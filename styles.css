@@ -5,3 +5,97 @@
 .fade-out {
   opacity: 0;
 }
+
+#newPhraseBtn {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+#newPhraseBtn:hover {
+  transform: scale(1.05);
+  background-color: var(--brand-accent);
+  border-color: var(--brand-accent);
+  color: #000;
+}
+
+:root {
+  --brand-green: #3b7a57;
+  --brand-accent: #f4d35e;
+}
+
+.navbar.bg-success,
+.btn-success {
+  background-color: var(--brand-green) !important;
+  border-color: var(--brand-green) !important;
+}
+
+.btn-success:hover {
+  background-color: #2f6045 !important;
+}
+
+a {
+  color: var(--brand-green);
+}
+a:hover {
+  color: var(--brand-accent);
+}
+
+.navbar .nav-link.active {
+  color: var(--brand-accent) !important;
+}
+
+.navbar .nav-link.active:hover {
+  color: rgba(244, 211, 94, 0.85) !important;
+}
+
+header.bg-light {
+  background: radial-gradient(circle at center, #ffffff 0%, #e6f2ec 100%);
+}
+
+header.bg-light h1,
+header.bg-light p {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#resources .card {
+  border: none;
+  border-radius: 12px;
+}
+#resources .card img {
+  border-radius: 12px 12px 0 0;
+}
+
+.btn {
+  transition: transform 0.2s ease;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40%;
+  height: 3px;
+  background-color: var(--brand-accent);
+}
+
+footer {
+  background: linear-gradient(90deg, var(--brand-green), #2f6045);
+}

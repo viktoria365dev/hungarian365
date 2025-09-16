@@ -12,8 +12,9 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
       <div class="container">
@@ -45,46 +46,49 @@
       </div>
     </nav>
 
-    <!-- Header -->
-    <header class="bg-light py-5 text-center">
-      <div class="container">
-        <h1 class="fw-bold">About Hungarian 365</h1>
-        <p class="lead">Your daily companion for learning Hungarian</p>
-      </div>
-    </header>
+    <!-- Main content -->
+    <main class="flex-fill">
+      <!-- Header -->
+      <header class="bg-light py-5 text-center">
+        <div class="container">
+          <h1 class="fw-bold">About Hungarian 365</h1>
+          <p class="lead">Your daily companion for learning Hungarian</p>
+        </div>
+      </header>
 
-    <!-- About Content -->
-    <section class="container my-5">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6">
-          <img
-            src="about-image.jpg"
-            alt="Learning Hungarian"
-            class="img-fluid rounded shadow-sm"
-          />
+      <!-- About Content -->
+      <section class="container my-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <img
+              src="./images/graded-reader.jpg"
+              alt="Learning Hungarian"
+              class="img-fluid rounded shadow-sm"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h2>Our Mission</h2>
+            <p>
+              Hungarian 365 was created to make learning Hungarian simple,
+              consistent, and enjoyable. Every day, we share a new phrase with
+              its English translation, along with resources to help you practice
+              and improve.
+            </p>
+            <p>
+              Whether you’re a beginner or brushing up on your skills,
+              Hungarian 365 offers tools like flashcards, graded readers, and
+              cultural tips to keep you motivated.
+            </p>
+            <h3>Why Hungarian?</h3>
+            <p>
+              Hungarian is a unique and beautiful language with deep cultural
+              roots. We believe that learning it opens doors to new friendships,
+              travel experiences, and a richer understanding of Central Europe.
+            </p>
+          </div>
         </div>
-        <div class="col-lg-6">
-          <h2>Our Mission</h2>
-          <p>
-            Hungarian 365 was created to make learning Hungarian simple,
-            consistent, and enjoyable. Every day, we share a new phrase with its
-            English translation, along with resources to help you practice and
-            improve.
-          </p>
-          <p>
-            Whether you’re a beginner or brushing up on your skills,
-            Hungarian 365 offers tools like flashcards, graded readers, and
-            cultural tips to keep you motivated.
-          </p>
-          <h3>Why Hungarian?</h3>
-          <p>
-            Hungarian is a unique and beautiful language with deep cultural
-            roots. We believe that learning it opens doors to new friendships,
-            travel experiences, and a richer understanding of Central Europe.
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4">

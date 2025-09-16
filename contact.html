@@ -12,8 +12,9 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
       <div class="container">
@@ -45,66 +46,69 @@
       </div>
     </nav>
 
-    <section class="container my-5 text-center">
-      <h2>Get in Touch</h2>
-      <p class="lead">
-        I’d love to hear from you! Choose the way that works best for you.
-      </p>
+    <!-- Main content -->
+    <main class="flex-fill">
+      <section class="container my-5 text-center">
+        <h2>Get in Touch</h2>
+        <p class="lead">
+          I’d love to hear from you! Choose the way that works best for you.
+        </p>
 
-      <!-- Email -->
-      <a
-        href="mailto:info@hungarian365.com"
-        class="btn btn-success btn-lg mb-3"
-      >
-        <i class="bi bi-envelope-fill"></i> Email Me
-      </a>
-
-      <!-- Socials -->
-      <div class="d-flex flex-wrap gap-3 justify-content-center mb-4">
+        <!-- Email -->
         <a
-          href="https://instagram.com/YourUsername"
-          target="_blank"
-          class="btn btn-outline-dark"
+          href="mailto:info@hungarian365.com"
+          class="btn btn-success btn-lg mb-3"
         >
-          <i class="bi bi-instagram"></i> Instagram
+          <i class="bi bi-envelope-fill"></i> Email Me
         </a>
-        <a
-          href="https://youtube.com/YourChannel"
-          target="_blank"
-          class="btn btn-outline-dark"
-        >
-          <i class="bi bi-youtube"></i> YouTube
-        </a>
-        <a
-          href="https://facebook.com/YourPage"
-          target="_blank"
-          class="btn btn-outline-dark"
-        >
-          <i class="bi bi-facebook"></i> Facebook
-        </a>
-      </div>
 
-      <!-- Newsletter -->
-      <a
-        href="https://successful-trader-414.kit.com/efa94950d7"
-        target="_blank"
-        class="btn btn-success"
-      >
-        <i class="bi bi-envelope-paper-heart"></i> Join the Newsletter
-      </a>
+        <!-- Socials -->
+        <div class="d-flex flex-wrap gap-3 justify-content-center mb-4">
+          <a
+            href="https://instagram.com/YourUsername"
+            target="_blank"
+            class="btn btn-outline-dark"
+          >
+            <i class="bi bi-instagram"></i> Instagram
+          </a>
+          <a
+            href="https://youtube.com/YourChannel"
+            target="_blank"
+            class="btn btn-outline-dark"
+          >
+            <i class="bi bi-youtube"></i> YouTube
+          </a>
+          <a
+            href="https://facebook.com/YourPage"
+            target="_blank"
+            class="btn btn-outline-dark"
+          >
+            <i class="bi bi-facebook"></i> Facebook
+          </a>
+        </div>
 
-      <!-- Booking -->
-
-      <p class="mt-4">
+        <!-- Newsletter -->
         <a
-          href="https://www.italki.com/en/i/ref/AAD0BEG?hl=en&utm_medium=user_referral&utm_source=copylink_share"
+          href="https://successful-trader-414.kit.com/efa94950d7"
           target="_blank"
-          class="btn btn-primary"
+          class="btn btn-success"
         >
-          <i class="bi bi-calendar-event"></i> Book a Lesson
+          <i class="bi bi-envelope-paper-heart"></i> Join the Newsletter
         </a>
-      </p>
-    </section>
+
+        <!-- Booking -->
+
+        <p class="mt-4">
+          <a
+            href="https://www.italki.com/en/i/ref/AAD0BEG?hl=en&utm_medium=user_referral&utm_source=copylink_share"
+            target="_blank"
+            class="btn btn-success"
+          >
+            <i class="bi bi-calendar-event"></i> Book a Lesson
+          </a>
+        </p>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4">
