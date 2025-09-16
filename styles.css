@@ -1,36 +1,10 @@
-.fade-text {
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
-}
-.fade-out {
-  opacity: 0;
-}
-
-#newPhraseBtn {
-  transition: transform 0.2s ease, background-color 0.2s ease;
-}
-#newPhraseBtn:hover {
-  transform: scale(1.05);
-  background-color: var(--brand-accent);
-  border-color: var(--brand-accent);
-  color: #000;
-}
-
+/* 1. Variables */
 :root {
   --brand-green: #3b7a57;
   --brand-accent: #f4d35e;
 }
 
-.navbar.bg-success,
-.btn-success {
-  background-color: var(--brand-green) !important;
-  border-color: var(--brand-green) !important;
-}
-
-.btn-success:hover {
-  background-color: #2f6045 !important;
-}
-
+/* 2. Global element styles */
 a {
   color: var(--brand-green);
 }
@@ -38,47 +12,9 @@ a:hover {
   color: var(--brand-accent);
 }
 
-.navbar .nav-link.active {
-  color: var(--brand-accent) !important;
-}
-
-.navbar .nav-link.active:hover {
-  color: rgba(244, 211, 94, 0.85) !important;
-}
-
-header.bg-light {
-  background: radial-gradient(circle at center, #ffffff 0%, #e6f2ec 100%);
-}
-
-header.bg-light h1,
-header.bg-light p {
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-#resources .card {
-  border: none;
-  border-radius: 12px;
-}
-#resources .card img {
-  border-radius: 12px 12px 0 0;
-}
-
-.btn {
-  transition: transform 0.2s ease;
-}
-.btn:hover {
-  transform: translateY(-2px);
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
 section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2%;
+  padding-bottom: 2rem;
 }
 
 h2 {
@@ -96,6 +32,231 @@ h2::after {
   background-color: var(--brand-accent);
 }
 
+/* 3. Navbar */
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(244, 211, 94, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size: 1.3rem;
+}
+.navbar-brand span {
+  color: var(--brand-accent);
+}
+
+.navbar.bg-success {
+  background-color: var(--brand-green) !important;
+  border-color: var(--brand-green) !important;
+}
+
+.navbar .nav-link {
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.navbar .nav-link:hover {
+  transform: translateY(-1px);
+}
+.navbar .nav-link.active {
+  color: var(--brand-accent) !important;
+}
+.navbar .nav-link.active:hover {
+  color: rgba(244, 211, 94, 0.85) !important;
+}
+
+/* 4. Buttons */
+.btn-success {
+  background-color: var(--brand-green) !important;
+  border-color: var(--brand-green) !important;
+}
+.btn-success:hover {
+  background-color: #2f6045 !important;
+}
+
+.btn {
+  transition: transform 0.2s ease;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+#newPhraseBtn {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+#newPhraseBtn:hover {
+  transform: scale(1.05);
+  background-color: var(--brand-accent);
+  border-color: var(--brand-accent);
+  color: #000;
+}
+
+/* 5. Hero section (homepage) */
+.hero-section {
+  position: relative;
+  background: radial-gradient(circle at center, #ffffff 0%, #e6f2ec 100%);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  overflow: hidden;
+}
+.hero-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    #ffffff 100%
+  );
+}
+.hero-section h1 span {
+  color: var(--brand-accent);
+}
+.hero-section p {
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* 6. Page headers (About, Testimonials, Contact) */
+.page-header {
+  position: relative;
+  background: radial-gradient(circle at center, #ffffff 0%, #e6f2ec 100%);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  overflow: hidden;
+}
+.page-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    #ffffff 100%
+  );
+}
+.page-header h1 {
+  margin-bottom: 1rem;
+}
+.page-header p {
+  color: #555;
+}
+
+/* 7. Generic .bg-light header variant */
+header.bg-light {
+  background: radial-gradient(circle at center, #ffffff 0%, #e6f2ec 100%);
+}
+header.bg-light h1,
+header.bg-light p {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* 8. Cards & resources */
+#daily .card {
+  background: linear-gradient(135deg, #ffffff, #f8fdfb);
+  border-radius: 16px;
+}
+
+#hungarianPhrase {
+  color: var(--brand-green);
+}
+
+#resources .card {
+  border: none;
+  border-radius: 12px;
+}
+#resources .card img {
+  border-radius: 12px 12px 0 0;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.testimonials .card-text {
+  font-style: italic;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.testimonials .card-text::before {
+  content: "“";
+  font-size: 2rem;
+  color: var(--brand-accent);
+  position: absolute;
+  left: 0;
+  top: -0.2rem;
+}
+
+.testimonials .card .fw-bold {
+  color: var(--brand-green);
+}
+
+.testimonials .card small {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.testimonials .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonials .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 9. Newsletter form (ConvertKit) */
+#newsletter .newsletter-form {
+  margin-top: 2.5rem;
+}
+button.formkit-submit {
+  background-color: var(--brand-green) !important;
+  border: none !important;
+}
+.formkit-submit:hover {
+  background-color: #2f6045 !important;
+}
+a.formkit-powered-by-convertkit,
+.formkit-header {
+  display: none !important;
+}
+
+/* 10. Footer */
 footer {
   background: linear-gradient(90deg, var(--brand-green), #2f6045);
+}
+
+/* 11. Animations & effects */
+.fade-text {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.fade-out {
+  opacity: 0;
+}
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+.fade-in-up.delay-1 {
+  animation-delay: 0.2s;
+}
+.fade-in-up.delay-2 {
+  animation-delay: 0.4s;
+}
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
