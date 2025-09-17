@@ -5,6 +5,10 @@
 }
 
 /* 2. Global element styles */
+body {
+  overflow-x: hidden;
+}
+
 a {
   color: var(--brand-green);
 }
@@ -185,15 +189,6 @@ header.bg-light p {
   padding-left: 1.5rem;
 }
 
-.testimonials .card-text::before {
-  content: "“";
-  font-size: 2rem;
-  color: var(--brand-accent);
-  position: absolute;
-  left: 0;
-  top: -0.2rem;
-}
-
 .testimonials .card .fw-bold {
   color: var(--brand-green);
 }
@@ -212,6 +207,50 @@ header.bg-light p {
 .testimonials .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials .featured-card {
+  background: linear-gradient(135deg, #ffffff, #f9fcf8);
+  border-left: 6px solid var(--brand-accent);
+  padding: 1.5rem;
+}
+
+.testimonials small.text-muted {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .testimonials .featured-card {
+    font-size: 1.05rem;
+  }
+}
+
+/* Quote - About */
+.text-brand-green {
+  color: var(--brand-green);
+}
+
+.quote-section {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1rem;
+  background: rgba(244, 211, 94, 0.08);
+  border-radius: 8px;
+}
+
+.quote-section p {
+  margin-bottom: 0.5rem;
+}
+
+.quote-section .display-5 {
+  line-height: 1.3;
+}
+
+@media (max-width: 576px) {
+  .quote-section .display-5 {
+    font-size: 1.75rem;
+  }
 }
 
 /* 9. Newsletter form (ConvertKit) */

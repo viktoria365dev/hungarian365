@@ -12,13 +12,14 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="d-flex flex-column min-vh-100">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
       <div class="container">
-        <a class="navbar-brand" href="#">Hungarian <span>365</span></a>
+        <a class="navbar-brand" href="index.html">Hungarian <span>365</span></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -56,127 +57,124 @@
         </div>
       </header>
 
-
-
-        <div class="row g-4 justify-content-center">
-          <!-- Email -->
-          <div class="col-md-5">
-            <div class="card h-100 text-center border-0 shadow-sm">
-              <div class="card-body">
-                <i class="bi bi-envelope-fill display-5 text-success mb-3"></i>
-                <h5 class="card-title">Email Me</h5>
-                <p class="card-text">Send me a message directly via email.</p>
-                <a href="mailto:info@hungarian365.com" class="btn btn-success"
-                  >Email</a
-                >
-              </div>
+      <div class="row g-4 justify-content-center">
+        <!-- Email -->
+        <div class="col-md-5">
+          <div class="card h-100 text-center border-0 shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-envelope-fill display-5 text-success mb-3"></i>
+              <h5 class="card-title">Email Me</h5>
+              <p class="card-text">Send me a message directly via email.</p>
+              <span id="emailButton"></span>
             </div>
           </div>
+        </div>
 
-          <!-- Socials -->
-          <div class="col-md-5">
-            <div class="card h-100 text-center border-0 shadow-sm">
-              <div class="card-body">
-                <i class="bi bi-people-fill display-5 text-success mb-3"></i>
-                <h5 class="card-title">Follow Me</h5>
-                <p class="card-text">Connect with me on social media.</p>
-                <div class="d-flex flex-wrap gap-2 justify-content-center">
-                  <a
-                    href="https://instagram.com/YourUsername"
-                    target="_blank"
-                    class="btn btn-outline-dark btn-sm"
-                  >
-                    <i class="bi bi-instagram"></i> Instagram
-                  </a>
-                  <a
-                    href="https://youtube.com/YourChannel"
-                    target="_blank"
-                    class="btn btn-outline-dark btn-sm"
-                  >
-                    <i class="bi bi-youtube"></i> YouTube
-                  </a>
-                  <a
-                    href="https://facebook.com/YourPage"
-                    target="_blank"
-                    class="btn btn-outline-dark btn-sm"
-                  >
-                    <i class="bi bi-facebook"></i> Facebook
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Newsletter -->
-          <div class="col-md-5">
-            <div class="card h-100 text-center border-0 shadow-sm">
-              <div class="card-body">
-                <i
-                  class="bi bi-envelope-paper-heart display-5 text-success mb-3"
-                ></i>
-                <h5 class="card-title">Join the Newsletter</h5>
-                <p class="card-text">
-                  Get updates and daily Hungarian phrases.
-                </p>
+        <!-- Socials -->
+        <div class="col-md-5">
+          <div class="card h-100 text-center border-0 shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-people-fill display-5 text-success mb-3"></i>
+              <h5 class="card-title">Follow Me</h5>
+              <p class="card-text">Connect with me on social media.</p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
                 <a
-                  href="https://successful-trader-414.kit.com/efa94950d7"
+                  href="https://www.instagram.com/hungarian365/"
                   target="_blank"
-                  class="btn btn-success"
+                  class="btn btn-outline-dark btn-sm"
                 >
-                  Subscribe
+                  <i class="bi bi-instagram"></i> Instagram
                 </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Booking -->
-          <div class="col-md-5">
-            <div class="card h-100 text-center border-0 shadow-sm">
-              <div class="card-body">
-                <i class="bi bi-calendar-event display-5 text-success mb-3"></i>
-                <h5 class="card-title">Book a Lesson</h5>
-                <p class="card-text">Schedule a session with me.</p>
                 <a
-                  href="https://www.italki.com/en/i/ref/AAD0BEG?hl=en&utm_medium=user_referral&utm_source=copylink_share"
+                  href="https://www.youtube.com/@hungarian365"
                   target="_blank"
-                  class="btn btn-success"
+                  class="btn btn-outline-dark btn-sm"
                 >
-                  Book Now
+                  <i class="bi bi-youtube"></i> YouTube
+                </a>
+                <a
+                  href="https://www.facebook.com/hungarian365/"
+                  target="_blank"
+                  class="btn btn-outline-dark btn-sm"
+                >
+                  <i class="bi bi-facebook"></i> Facebook
                 </a>
               </div>
             </div>
           </div>
         </div>
-      </section>
+
+        <!-- Newsletter -->
+        <div class="col-md-5">
+          <div class="card h-100 text-center border-0 shadow-sm">
+            <div class="card-body">
+              <i
+                class="bi bi-envelope-paper-heart display-5 text-success mb-3"
+              ></i>
+              <h5 class="card-title">Join the Newsletter</h5>
+              <p class="card-text">Get updates and daily Hungarian phrases.</p>
+              <a
+                href="https://successful-trader-414.kit.com/efa94950d7"
+                target="_blank"
+                class="btn btn-success"
+              >
+                Subscribe
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Booking -->
+        <div class="col-md-5">
+          <div class="card h-100 text-center border-0 shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-calendar-event display-5 text-success mb-3"></i>
+              <h5 class="card-title">Book a Lesson</h5>
+              <p class="card-text">Schedule a session with me.</p>
+              <a
+                href="https://www.italki.com/en/i/ref/AAD0BEG?hl=en&utm_medium=user_referral&utm_source=copylink_share"
+                target="_blank"
+                class="btn btn-success"
+              >
+                Book Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4">
       <div class="container">
-        <p class="mb-2">&copy; 2025 Hungarian 365</p>
+        <p class="mb-2">&copy; <span id="currentYear"></span> Hungarian 365</p>
         <div class="d-flex justify-content-center gap-3">
           <a
-            href="https://instagram.com/YourUsername"
+            href="https://www.instagram.com/hungarian365/"
             target="_blank"
             class="text-white fs-4"
-            ><i class="bi bi-instagram"></i
-          ></a>
+          >
+            <i class="bi bi-instagram"></i>
+          </a>
           <a
-            href="https://youtube.com/YourChannel"
+            href="https://www.youtube.com/@hungarian365"
             target="_blank"
             class="text-white fs-4"
-            ><i class="bi bi-youtube"></i
-          ></a>
+          >
+            <i class="bi bi-youtube"></i>
+          </a>
           <a
-            href="https://facebook.com/YourPage"
+            href="https://www.facebook.com/hungarian365/"
             target="_blank"
             class="text-white fs-4"
-            ><i class="bi bi-facebook"></i
-          ></a>
+          >
+            <i class="bi bi-facebook"></i>
+          </a>
         </div>
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>

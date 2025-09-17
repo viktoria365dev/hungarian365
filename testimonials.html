@@ -12,13 +12,14 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="d-flex flex-column min-vh-100">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
       <div class="container">
-        <a class="navbar-brand" href="#">Hungarian <span>365</span></a>
+        <a class="navbar-brand" href="index.html">Hungarian <span>365</span></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -64,8 +65,8 @@
       <section class="container my-5 testimonials">
         <div class="row g-4">
           <!-- Jesus -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm">
+          <div class="col-md-12 col-lg-8">
+            <div class="card h-100 shadow-sm featured-card">
               <div class="card-body">
                 <p class="card-text">
                   "I really enjoy Viktoria's lessons. She is a very professional
@@ -211,8 +212,8 @@
           </div>
 
           <!-- Julia -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm">
+          <div class="col-md-12 col-lg-8">
+            <div class="card h-100 shadow-sm featured-card">
               <div class="card-body">
                 <p class="card-text">
                   "Viktoria is a great teacher who is professional, yet still
@@ -387,8 +388,8 @@
           </div>
 
           <!-- Jordan -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm">
+          <div class="col-md-12 col-lg-8">
+            <div class="card h-100 shadow-sm featured-card">
               <div class="card-body">
                 <p class="card-text">
                   "After multiple lessons with Viktoria, I can say with
@@ -521,8 +522,8 @@
           </div>
 
           <!-- Alain -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm">
+          <div class="col-md-12 col-lg-8">
+            <div class="card h-100 shadow-sm featured-card">
               <div class="card-body">
                 <p class="card-text">
                   "Victoria is a fantastic teacher. Before I started the course,
@@ -621,24 +622,6 @@
             </div>
           </div>
 
-          <!-- Dave -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body">
-                <p class="card-text">
-                  "Viktória has been the perfect teacher for what I needed. I've
-                  been trying to refresh my Hungarian ahead of a trip to
-                  Hungary, and she was a patient and attentive teacher, and a
-                  wonderful conversation partner! Köszönöm szépen, Viktória!"
-                </p>
-                <p class="fw-bold mb-1">— Dave</p>
-                <small class="text-muted"
-                  >6 Hungarian lessons • Dec 6, 2023</small
-                >
-              </div>
-            </div>
-          </div>
-
           <!-- Anastasia -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100 shadow-sm">
@@ -650,6 +633,24 @@
                 <p class="fw-bold mb-1">— Anastasia</p>
                 <small class="text-muted"
                   >55 Hungarian lessons • Nov 9, 2023</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Dave -->
+          <div class="col-md-12 col-lg-8">
+            <div class="card h-100 shadow-sm featured-card">
+              <div class="card-body">
+                <p class="card-text">
+                  "Viktória has been the perfect teacher for what I needed. I've
+                  been trying to refresh my Hungarian ahead of a trip to
+                  Hungary, and she was a patient and attentive teacher, and a
+                  wonderful conversation partner! Köszönöm szépen, Viktória!"
+                </p>
+                <p class="fw-bold mb-1">— Dave</p>
+                <small class="text-muted"
+                  >6 Hungarian lessons • Dec 6, 2023</small
                 >
               </div>
             </div>
@@ -730,8 +731,8 @@
           </div>
 
           <!-- Guillermo -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm">
+          <div class="col-md-12 col-lg-8">
+            <div class="card h-100 shadow-sm featured-card">
               <div class="card-body">
                 <p class="card-text">
                   "So so happy I have finally found Viktória. She really knows
@@ -771,24 +772,24 @@
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4">
       <div class="container">
-        <p class="mb-2">&copy; 2025 Hungarian 365</p>
+        <p class="mb-2">&copy; <span id="currentYear"></span> Hungarian 365</p>
         <div class="d-flex justify-content-center gap-3">
           <a
-            href="https://instagram.com/YourUsername"
+            href="https://www.instagram.com/hungarian365/"
             target="_blank"
             class="text-white fs-4"
           >
             <i class="bi bi-instagram"></i>
           </a>
           <a
-            href="https://youtube.com/YourChannel"
+            href="https://www.youtube.com/@hungarian365"
             target="_blank"
             class="text-white fs-4"
           >
             <i class="bi bi-youtube"></i>
           </a>
           <a
-            href="https://facebook.com/YourPage"
+            href="https://www.facebook.com/hungarian365/"
             target="_blank"
             class="text-white fs-4"
           >
@@ -797,5 +798,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
