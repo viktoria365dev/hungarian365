@@ -25,6 +25,7 @@ h2 {
   position: relative;
   display: inline-block;
   padding-bottom: 0.3rem;
+  margin-bottom: 1.5rem;
 }
 h2::after {
   content: "";
@@ -164,6 +165,8 @@ header.bg-light p {
 #daily .card {
   background: linear-gradient(135deg, #ffffff, #f8fdfb);
   border-radius: 16px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 #hungarianPhrase {
@@ -171,7 +174,7 @@ header.bg-light p {
 }
 
 #resources .card {
-  border: none;
+  border: 1px solid var(--brand-green);
   border-radius: 12px;
 }
 #resources .card img {

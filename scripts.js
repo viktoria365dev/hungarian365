@@ -38,22 +38,13 @@ document.addEventListener("DOMContentLoaded", function () {
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
-
-  // Email obfuscation for footer
-  const emailSpan = document.getElementById("email");
-  if (emailSpan) {
-    const user = "info";
-    const domain = "hungarian365.com";
-    const email = `${user}@${domain}`;
-    emailSpan.innerHTML = `<a href="mailto:${email}">${email}</a>`;
-  }
+  const user = "hungarian365";
+  const domain = "gmail.com";
+  const email = `${user}@${domain}`;
 
   // Email obfuscation for Contact page button
   const emailButton = document.getElementById("emailButton");
   if (emailButton) {
-    const user = "info";
-    const domain = "hungarian365.com";
-    const email = `${user}@${domain}`;
     emailButton.innerHTML = `<a href="mailto:${email}" class="btn btn-success">Email</a>`;
   }
 });
